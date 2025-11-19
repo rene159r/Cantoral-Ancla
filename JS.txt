@@ -1,0 +1,9 @@
+function transponerLetra(pasos) {
+  const elementos = document.querySelectorAll(".acorde");
+  elementos.forEach(el => {
+    let raiz = el.innerText;
+    let index = notas.indexOf(raiz);
+    let nuevo = notas[(index + pasos + notas.length) % notas.length];
+    el.innerText = nuevo;
+  });
+}

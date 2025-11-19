@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Acordes para Músicos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎶 Acordes Interactivos</h1>
+
+  <input id="acorde" placeholder="Escribe un acorde (ej. C)">
+  <button onclick="mostrarAcorde()">Mostrar acorde</button>
+  <button onclick="transponerAcorde(1)">Subir tono</button>
+  <button onclick="transponerAcorde(-1)">Bajar tono</button>
+
+  <div id="resultado"></div>
+  <div id="diagrama"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
